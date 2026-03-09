@@ -1,12 +1,12 @@
-workfows:
-   android-workfow:
-      name: AF GARMENTS APK Build
-      max_build_duration: 60
+workfows:  
+   android-workfow:  
+      name:    AF GARMENTS APK Build
+      max_build_duration:    60
       environment:
         java: 17
     scripts:
-     - name: Set permissions
-     script: chmod +x gradlew
+     - name:      Set permissions
+     script:        chmod +x gradlew
      - name: Build debug APK
      script: ./gradlew assembleDebug
      artifacts:
